@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ac0ee83e-3294-4ea5-b0ab-19efa811989a": {
+      "ProjectGuid": "ac0ee83e-3294-4ea5-b0ab-19efa811989a",
+      "DisplayName": "serilog-exploration",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
