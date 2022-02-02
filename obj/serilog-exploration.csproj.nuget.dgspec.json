@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\serilog-exploration\\serilog-exploration.csproj": {}
+    "C:\\Users\\samue\\source\\repos\\serilog-exploration\\serilog-exploration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\serilog-exploration\\serilog-exploration.csproj": {
+    "C:\\Users\\samue\\source\\repos\\serilog-exploration\\serilog-exploration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\serilog-exploration\\serilog-exploration.csproj",
+        "projectUniqueName": "C:\\Users\\samue\\source\\repos\\serilog-exploration\\serilog-exploration.csproj",
         "projectName": "serilog-exploration",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\serilog-exploration\\serilog-exploration.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\serilog-exploration\\obj\\",
+        "projectPath": "C:\\Users\\samue\\source\\repos\\serilog-exploration\\serilog-exploration.csproj",
+        "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samue\\source\\repos\\serilog-exploration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,7 +28,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\HP\\Desktop": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +45,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog.aspnetcore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "serilog.sinks.seq": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
