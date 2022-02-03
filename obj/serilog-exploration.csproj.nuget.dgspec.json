@@ -45,6 +45,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "serilog.aspnetcore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "serilog.sinks.seq": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
