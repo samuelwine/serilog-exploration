@@ -1,7 +1,16 @@
+using Serilog;
+using serilog_exploration;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog((ctx, lc) => lc
+    .WriteTo.Console()
+    .WriteTo.Seq("http://localhost:5341")
+    .WriteTo.ApplicationInsights(new OperationTelemetryConverter())
+    .Enrich.WithOperationId());
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddApplicationInsightsTelemetry();
 
 var app = builder.Build();
 
